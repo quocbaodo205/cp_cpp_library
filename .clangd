@@ -1,0 +1,11 @@
+CompileFlags:
+  CompilationDatabase: build/clang-debug
+  Add: [-std=gnu++23]
+
+Index:
+  Background: Build
+
+Diagnostics:
+  UnusedIncludes: Strict
+  MissingIncludes: Strict
+

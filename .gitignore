@@ -1,0 +1,9 @@
+/build/
+/.cache/
+/.clangd-index/
+__pycache__/
+
+/playground/
+/tools/cpviz/
+/*_viz.md
+
