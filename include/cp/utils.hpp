@@ -121,6 +121,18 @@ std::vector<Row> transpose(const std::vector<Row>& matrix) {
     return result;
 }
 
+// Rotate a rectangular matrix ninety degrees clockwise while preserving its row
+// type. For example, this turns both vector<vector<int>> and vector<string>
+// into the same kind of rotated matrix.
+template <class Row>
+std::vector<Row> rotate_clockwise(const std::vector<Row>& matrix) {
+    std::vector<Row> result = transpose(matrix);
+    for (Row& row : result) {
+        std::reverse(row.begin(), row.end());
+    }
+    return result;
+}
+
 template <class Function>
 class YCombinator {
 public:
